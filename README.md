@@ -16,3 +16,7 @@ place this shortcode in your desired page.
 [aics_contact_form]
 
 ```
+
+## How it work
+
+every submission will be recorded to database and will be emailed to admin email
