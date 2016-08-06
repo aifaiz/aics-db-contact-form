@@ -14,6 +14,10 @@ wordpress contact form shortcode with database on submission
 
 ---
 
+## How to install
+
+You can download this repo in .ZIP file and upload it on your wp-admin inside plugins page
+
 
 ## How to use
 
