@@ -34,3 +34,10 @@ every submission will be recorded to database and will be emailed to admin email
 1. Form data will be recorded to database
 2. System will send email to admin
 3. Admin can view the record in the admin page
+
+---
+developer: [AiCS Businesses](http://aics.my)
+
+![AiCS](http://aics.my/templates/aics/img/aics-web-logo.png "AiCS Businesses")
+
+AiCS Businesses is a Malaysian based web developer resides in Kuala Lumpur
