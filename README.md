@@ -6,6 +6,14 @@ wordpress contact form shortcode with database on submission
 
 ![example form](screenshot/example-form.png)
 
+![admin page](screenshot/admin-page-list-data.png)
+
+![settings page](screenshot/admin-page-setting.png)
+
+![admin menu](screenshot/admin-page-menu.png)
+
+---
+
 
 ## How to use
 
@@ -17,6 +25,12 @@ place this shortcode in your desired page.
 
 ```
 
-## How it work
+## How it will work
 
 every submission will be recorded to database and will be emailed to admin email
+
+## What happen when user submit contact form?
+
+1. Form data will be recorded to database
+2. System will send email to admin
+3. Admin can view the record in the admin page
