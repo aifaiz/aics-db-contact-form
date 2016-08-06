@@ -10,6 +10,9 @@ Version: 1.0
 $aics_contact_path = plugin_dir_path( __FILE__ );
 $aics_contact_db_version = '1.0';
 
+
+include_once($aics_contact_path.'/admin/admin.php');
+
 function initiate_install(){
     global $wpdb;
     
@@ -35,9 +38,21 @@ register_activation_hook( __FILE__, 'initiate_install' );
 
 // include bootstrap css
 function include_bootsrap(){
+    $bootstrap = get_option('aics_contact_form_bootstrap');
+    if($bootstrap == 1):
     wp_enqueue_style('aics-contact-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', [], '3.3.7');
+    endif;
 }
 add_action('plugins_loaded', 'include_bootsrap');
+
+// dont include css on admin
+function disable_aics_style_include(){
+    $bootstrap = get_option('aics_contact_form_bootstrap');
+    if($bootstrap == 1):
+    wp_deregister_style('aics-contact-bootstrap');
+    endif;
+}
+add_action('admin_init', 'disable_aics_style_include');
 
 function generate_contact_form_content(){
     global $aics_contact_path, $post;
